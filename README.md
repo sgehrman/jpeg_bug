@@ -1,6 +1,9 @@
 # jpeg_bug
 
-Jpeg decoding broken on flutter web.
+Jpeg decoding broken on flutter web??
 
-The enclosed Jpeg in the assets directory fails to render on Flutter web, but works fine on desktop and mobile.
+Works fine on Desktop. This Jpeg is black on Web (chrome)
 
+Broken on 3.22.2 and the current beta channel
+
+https://github.com/sgehrman/jpeg_bug

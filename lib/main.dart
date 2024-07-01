@@ -10,12 +10,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter Bugs',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Flutter Bugs'),
     );
   }
 }
@@ -42,7 +42,13 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'This jpeg fails if run in Flutter web.  Works fine on Desktop',
+              'Launch this app on Web and desktop or mobile',
+            ),
+            const Text(
+              'This jpeg displays black on Flutter web.  Works fine on Desktop/mobile',
+            ),
+            const Text(
+              'This jpeg displays fine in all other apps',
             ),
             Image.asset(
               'assets/badJpeg.jpg',
